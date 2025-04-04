@@ -150,6 +150,11 @@ body.home {
     padding: 10px;
 }
 
+footer img {
+    width: 20px;
+    height: auto;
+}
+
 /**Community Page**/
 .community {
     display: grid;
@@ -323,18 +328,68 @@ footer img {
     .team-block {
         width: 20%; 
     }
+
 }
 
-/* TEAM-Mobile View */
+
+/* About US Page */
 @media screen and (max-width: 768px) {
-    .team-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: 1fr 1fr; 
-        gap: 20px;
+    .about img {
+        width: 100px; 
+        margin: 0 auto; 
+    }
+    
+    .about td {
+        display: block; 
+        text-align: center; 
+        width: 100%;
     }
 
-    .team-block {
+    .about footer img {
+        width: auto; 
+        margin: 0 auto; 
+    }
+}
+
+/* Commnunity Page */
+.community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-block {
+    width: 48%; 
+    box-sizing: border-box;
+}
+
+
+.event-block.featured {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: row; 
+}
+
+
+.event-block.featured img {
+    width: 40%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+    .event-block {
+        width: 100%;
+    }
+
+    .event-block.featured {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .event-block.featured img {
         width: 100%;
     }
 }
