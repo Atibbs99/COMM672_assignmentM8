@@ -223,3 +223,118 @@ footer {
 footer img {
     width: 35px;
 }
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+    header {
+        display: none; 
+    }
+    
+    .feature-container {
+        display: flex;
+        flex-direction: row; 
+        gap: 20px;
+    }
+
+    h2 {
+        text-align: center; 
+    }
+
+    .feature-block {
+        width: 100%; 
+        padding: 20px;
+        box-sizing: border-box; 
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .feature-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .feature-block {
+        width: 100%; 
+    }
+
+    .hero .container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .hero .hero-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+}
+
+
+/* TESTIMONIAL-Tablet View */
+@media screen and (max-width: 1024px) {
+    .testimonial-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .testimonial-block {
+        width: 30%; 
+    }
+}
+
+/* TESTIMONIAL-Mobile View  */
+@media screen and (max-width: 768px) {
+    .testimonial-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .testimonial-block {
+        width: 100%; 
+    }
+}
+
+
+/* TEAM-Tablet View */
+@media screen and (max-width: 1024px) {
+    .team-container {
+        display: flex;
+        flex-direction: row; 
+        gap: 20px;
+    }
+
+    .team-block {
+        width: 20%; 
+    }
+}
+
+/* TEAM-Mobile View */
+@media screen and (max-width: 768px) {
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px;
+    }
+
+    .team-block {
+        width: 100%;
+    }
+}
